@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marius' Graphic Design & Video Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Marius Alaba</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#design-gallery">Designs</a>
+        <a href="#video-gallery">Videos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="hero container">
+      <p class="eyebrow">Graphic design & video editing portfolio</p>
+      <h1>Creative visuals that tell your story with motion and style.</h1>
+      <p class="hero-copy">A collection of selected projects showcasing my experience in graphic design, branding, social media content, motion graphics, and video editing. Each project demonstrates my creative process, technical skills, and ability to communicate ideas through visual media.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#design-gallery">View work</a>
+        <a class="btn btn-secondary" href="#contact">Let’s connect</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section container">
+      <div class="section-title">
+        <p class="section-label">About Me</p>
+        <h2>Design and motion work crafted for brands, stories, and social growth.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>I specialize in graphic design, branding, social media content, and video editing. From promotional materials and social campaigns to motion graphics and short-form videos, I create visuals that are clear, engaging, and memorable.</p>
+        </div>
+        <div>
+          <ul class="feature-list">
+            <li>Brand identity & collateral</li>
+            <li>Social media graphics</li>
+            <li>Short form video edits</li>
+            <li>Motion design for promos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="design-gallery" class="section container">
+      <div class="section-title">
+        <p class="section-label">Featured Designs</p>
+        <h2>Eye-catching layouts, posters, and digital graphics.</h2>
+      </div>
+      <div class="carousel-wrapper">
+        <button class="carousel-nav carousel-prev" aria-label="Previous designs">&#10094;</button>
+        <div class="carousel-container">
+          <div class="gallery-grid" id="designGallery">
+            <article class="gallery-card" data-image="assets/Best YEAR.jpg">
+              <img src="assets/Best YEAR.jpg" alt="Best Year Yet thumbnail" />
+            </article>
+            <article class="gallery-card" data-image="assets/LOVEv2.jpg">
+              <img src="assets/LOVEv2.jpg" alt="Love Simply thumbnail" />
+            </article>
+            <article class="gallery-card" data-image="assets/Parables.jpg">
+              <img src="assets/Parables.jpg" alt="The Parables thumbnail" />
+            </article>
+            <article class="gallery-card" data-image="assets/UNTO-US.jpg">
+              <img src="assets/UNTO-US.jpg" alt="For Unto Us thumbnail" />
+            </article>
+          </div>
+        </div>
+        <button class="carousel-nav carousel-next" aria-label="Next designs">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="video-gallery" class="section container">
+      <div class="section-title">
+        <p class="section-label">Video edits</p>
+        <h2>Reels, promos, and event highlights edits with cinematic impact.</h2>
+      </div>
+      <div class="gallery-grid video-gallery-grid">
+        <article class="video-card" data-video="assets/God.mp4">
+          <div class="video-preview">
+            <img class="video-thumb" src="assets/TOTGA.jpg" alt="TOTGA Highlights thumbnail" />
+            <span class="play-icon">▶</span>
+          </div>
+          <div class="video-info">
+            <h3>The One That God Allowed Highlights</h3>
+          </div>
+        </article>
+        <article class="video-card" data-video="assets/Women.mp4">
+          <div class="video-preview">
+            <img class="video-thumb" src="assets/Women.jpg" alt="Women's Fellowship Teaser thumbnail" />
+            <span class="play-icon">▶</span>
+          </div>
+          <div class="video-info">
+            <h3>Promo teaser</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <div class="section-title">
+        <p class="section-label">Work with me</p>
+        <h2>Ready to bring your next project to life?</h2>
+      </div>
+      <div class="contact-card">
+        <p>Send a message with your project brief, deadlines, or collaboration idea.</p>
+        <a class="btn btn-primary" href="mailto:marius.m.alaba@gmail.com">marius.m.alaba@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Marius Alaba. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#design-gallery">Designs</a>
+        <a href="#video-gallery">Video</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay hidden" id="videoModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close preview">✕</button>
+      <video controls class="modal-video" id="modalVideo">
+        <source src="" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+    </div>
+  </div>
+
+  <div class="modal-overlay hidden" id="imageModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close image preview">✕</button>
+      <img class="modal-image" id="modalImage" src="" alt="Full-size preview" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
